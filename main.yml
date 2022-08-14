@@ -52,7 +52,7 @@
 
   - name: Install and ensure existence for policycoreutils-python
     dnf:
-      name: policycoreutils-python
+      name: policycoreutils-python-utils
       state: present
 
   - name: configure sssd using survey values
