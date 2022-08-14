@@ -55,6 +55,10 @@
       name: policycoreutils-python-utils
       state: present
 
+  - name: Realm join to Active Directory Domain
+    shell:
+      cmd:  echo "{{ domainpassword }}" | realm join --user=towerauth mylesdomain.com
+
   - name: configure sssd using survey values
     template:
       src: sssd.conf.j2
