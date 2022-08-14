@@ -1,6 +1,7 @@
 ---
 - name: "Install AD_Join Packages"
   hosts: Home_Infrastructure
+  become: true
 
   tasks:
   
