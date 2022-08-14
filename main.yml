@@ -7,7 +7,7 @@
   - name: Install and verify running service for sssd
     dnf:
       name: sssd
-      state: started
+      state: present
   
   - name: Install and ensure existence for realmd
     dnf:
@@ -17,7 +17,7 @@
   - name: Install and verify running service oddjob
     dnf:
       name: oddjob
-      state: started
+      state: present
 
   - name: Install and ensure existence for oddjob-mkhomedir
     dnf:
